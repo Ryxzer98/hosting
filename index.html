@@ -190,6 +190,14 @@
             border-radius: 50%; /* Hace que el imán sea circular */
             background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
         }
+        .hidden {
+            display: none;
+        }
+        .terms {
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -205,15 +213,29 @@
             }
         </style>
     </div>
-    <header>
+    <header id="inicio">
         <img src="https://i.ibb.co/qm0QmbM/Monochrome-Ilustration-Graffiti-Logo.png" alt="Logo">
     </header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
     <nav id="sidebar">
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Ofertas</a>
-        <a href="#">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#jodidos">Jodidos</a>
+        <a href="#luchones">Luchones</a>
+        <a href="#fresas">Fresas</a>
+        <a href="#" id="terms-link">Términos y Condiciones</a>
+        <div id="terms" class="terms hidden">
+            <h2>Términos y Condiciones</h2>
+            <ul>
+                <li><strong>Edad mínima:</strong> 18 años.</li>
+                <li><strong>Uso:</strong> Solo para adultos.</li>
+                <li><strong>Precios:</strong> Sujetos a cambio.</li>
+                <li><strong>Envíos:</strong> Tiempos pueden variar.</li>
+                <li><strong>Devoluciones:</strong> 30 días sin usar.</li>
+                <li><strong>Privacidad:</strong> Protegemos tu info.</li>
+            </ul>
+        </div>
+        
+        
     </nav>
     <div class="main" id="main-content">
         <div class="carousel">
@@ -226,76 +248,129 @@
             <div class="magnet" style="background-image: url('https://mrvapes.mx/cdn/shop/collections/iplay.png?v=1696545409');"></div>
             <div class="magnet" style="background-image: url('https://snusmania.eu/cdn/shop/collections/elf_bar_logo.png?v=1699975103');"></div>
         </div>
-
-
         <div class="products-section">
             <h2>Nuevos</h2>
             <div class="products">
                 <div class="product">
                     <img src="https://donmaskking.com/cdn/shop/files/banana_ice.webp?v=1713580538&width=600" alt="Producto 1">
                     <h3>Mayweather Vape 15k hits</h3>
-                    <p>$ 550.00 MXN</p>
+                    <p>$ 650.00 MXN</p>
                 </div>
                 <div class="product">
                     <img src="https://i.ibb.co/L5DMSjW/image.png" alt="Producto 2">
                     <h3>Wonder G10 10K hits</h3>
-                    <p>$ 500.00 MXN</p>
+                    <p>$ 600.00 MXN</p>
                 </div>
                 <div class="product">
                     <img src="https://donmaskking.com/cdn/shop/files/APPLE-MANGO-PEAR_FRONT_87c8e987-e681-43df-8637-b70fff796d09.webp?v=1709069803&width=600" alt="Producto 3">
                     <h3>Iron Mike 15,000 hits</h3>
-                    <p>$ 600.00 MXN</p>
+                    <p>$ 700.00 MXN</p>
                 </div>
                 <div class="product">
                     <img src="https://i.ibb.co/vYZN7qD/image.png" alt="Producto 3">
                     <h3>Elfbar Touch 10k hits</h3>
-                    <p>$ 550.00 MXN</p>
+                    <p>$ 650.00 MXN</p>
                 </div>
             </div>
         </div>
-        <div class="products-section">
+        <div class="products-section" id="jodidos">
             <h2>Jodidos 200 - 350</h2>
             <div class="products">
+            <div class="product">
+                <img src="https://i.ibb.co/XCyRY2X/image.png" alt="Producto 3">
+                <h3>Wonder XL 1.5K hits</h3>
+                <p>$ 200.00 MXN</p>
+            </div>
                 <div class="product">
                     <img src="https://i.ibb.co/VY41KH0/image.png" alt="Producto 1">
                     <h3>IPlay Max 2.5K hits</h3>
                     <p>$ 280.00 MXN</p>
                 </div>
                 <div class="product">
+                    <img src="https://i.ibb.co/kyQhz1Y/image.png" alt="Producto 3">
+                    <h3>Wonder G4 4.5K hits</h3>
+                    <p>$ 300.00 MXN</p>
+                </div>
+                <div class="product">
                     <img src="https://shishashop.mx/cdn/shop/products/FLY3B_1024x1024@2x.png?v=1667325473" alt="Producto 2">
                     <h3>Fly Jumbo 5K hits</h3>
                     <p>$ 350.00 MXN</p>
                 </div>
-                <div class="product">
-                    <img src="https://i.ibb.co/kyQhz1Y/image.png" alt="Producto 3">
-                    <h3>Wonder G4 4.5K hits</h3>
-                    <p>$ 550.00 MXN</p>
-                </div>
             </div>
         </div>
-        <div class="products-section">
-            <h2>Productos</h2>
+        <div class="products-section" id="luchones">
+            <h2>Luchones 400 - 550</h2>
             <div class="products">
                 <div class="product">
-                    <img src="https://i.ibb.co/xgmbC0s/image.png" alt="Producto 1">
-                    <h3>Waka SoPro 10K hits</h3>
-                    <p>$ 700.00 MXN</p>
-                </div>
-                <div class="product">
-                    <img src="https://www.grino.mx/cdn/shop/files/X-boxPeachMint.png?v=1712783466" alt="Producto 2">
-                    
-                    <h3>Iplay Box 4k hits</h3>
+                    <img src="https://i0.wp.com/vapesmayoreo.mx/wp-content/uploads/2023/05/Funky-Republic-Blue-Razz-Ice.webp?fit=600%2C600&ssl=1" alt="Producto 2">
+                    <h3>Funky Republic 7K hits</h3>
                     <p>$ 400.00 MXN</p>
                 </div>
                 <div class="product">
-                    <img src="https://donmaskking.com/cdn/shop/files/mango-peach_55c4b3db-ffc1-4b50-b666-845374018cf8.webp?v=1708689740&width=600" alt="Producto 3">
-                    <h3>Bugatti 6k hits</h3>
+                    <img src="https://i.ibb.co/C7fLv9x/image.png" alt="Producto 1">
+                    <h3>Iplay Vibar 6.5K hits</h3>
+                    <p>$ 420.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.ibb.co/Dt4j2Fy/image.png" alt="Producto 1">
+                    <h3>Wonder G8 8K hits</h3>
+                    <p>$ 440.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.ibb.co/k6n3Vc6/image.png" alt="Producto 2">
+                    <h3>The Best by El ALFA 10K hits</h3>
                     <p>$ 550.00 MXN</p>
                 </div>
+                
+            </div>
+        </div>
+        <div class="products-section" id="fresas">
+            <h2>Fresas 600 +</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://i.ibb.co/L5DMSjW/image.png" alt="Producto 2">
+                    <h3>Wonder G10 10K hits</h3>
+                    <p>$ 600.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://donmaskking.com/cdn/shop/files/banana_ice.webp?v=1713580538&width=600" alt="Producto 1">
+                    <h3>Mayweather Vape 15k hits</h3>
+                    <p>$ 650.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.ibb.co/g3fcZZH/image.png" alt="Producto 1">
+                    <h3>Waka Sopro 10K hits</h3>
+                    <p>$ 650.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.ibb.co/vYZN7qD/image.png" alt="Producto 3">
+                    <h3>Elfbar Touch 10k hits</h3>
+                    <p>$ 650.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://donmaskking.com/cdn/shop/files/APPLE-MANGO-PEAR_FRONT_87c8e987-e681-43df-8637-b70fff796d09.webp?v=1709069803&width=600" alt="Producto 3">
+                    <h3>Iron Mike 15,000 hits</h3>
+                    <p>$ 700.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.ibb.co/TYqRj5R/image.png" alt="Producto 2">
+                    <h3>Wonder Race 15K hits</h3>
+                    <p>$ 700.00 MXN</p>
+                </div>
+                
             </div>
         </div>
     </div>
     <script>
+         document.getElementById('terms-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var terms = document.getElementById('terms');
+            if (terms.classList.contains('hidden')) {
+                terms.classList.remove('hidden');
+            } else {
+                terms.classList.add('hidden');
+            }
+        });
         // Función para ocultar la capa de transición y permitir el desplazamiento
         function hideTransition() {
             const transitionLayer = document.querySelector('.fade-out');

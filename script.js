@@ -48,3 +48,53 @@ function showOptions(overlayId) {
         setInterval(() => {
             showSlide(currentSlide + 1);
         }, 3000);
+        
+
+        var cartItems = [];
+
+        function showOptions(id) {
+            var overlay = document.getElementById(id);
+            overlay.classList.remove("hidden");
+        }
+    
+        function hideOptions(id) {
+            var overlay = document.getElementById(id);
+            overlay.classList.add("hidden");
+        }
+    
+        function addToCart(product, sabor) {
+            cartItems.push({ product: product, sabor: sabor });
+        }
+    
+        function toggleCart() {
+            var cartDiv = document.getElementById('cart');
+            if (cartDiv.classList.contains('hidden')) {
+                cartDiv.innerHTML = '<div class="overlay-content"><h1>Carrito</h1>' + getCartContent() + '<button onclick="sendOrder()">Enviar pedido</button></div>';
+                cartDiv.classList.remove('hidden');
+            } else {
+                cartDiv.classList.add('hidden');
+            }
+        }
+    
+        function getCartContent() {
+            var content = '<ul>';
+            cartItems.forEach(function(item) {
+                content += '<li>' + item.product + ': ' + item.sabor + '</li>';
+            });
+            content += '</ul>';
+            return content;
+        }
+    
+        function sendOrder() {
+            // Construir el cuerpo del correo con la información del pedido
+            var emailBody = 'Pedido:\n';
+            cartItems.forEach(function(item) {
+                emailBody += item.product + ': ' + item.sabor + '\n';
+            });
+    
+            // Enviar correo electrónico
+            var email = 'humourbano@gmail.com';
+            var subject = 'Nuevo pedido';
+            window.location.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(emailBody);
+        }
+    

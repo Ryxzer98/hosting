@@ -117,19 +117,33 @@
         }
 
         .menu-toggle {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background-color: transparent;
-            /* Establece el color de fondo transparente */
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 1000;
-            font-size: 25px;
-            font-family: cursive;
-        }
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.second-button {
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Coloca el botón en el lado derecho */
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 25px;
+    font-family: cursive;
+}
+
 
         nav {
             position: fixed;
@@ -416,12 +430,6 @@
             box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
             transform: translate(0.1em, 0.1em);
         }
-
-        .ope {
-            top: 23px;
-            left: 470px;
-            position: absolute;
-        }
     </style>
 </head>
 
@@ -440,10 +448,10 @@
     </div>
     <header id="inicio">
         <img src="https://i.ibb.co/qm0QmbM/Monochrome-Ilustration-Graffiti-Logo.png" alt="Logo">
-      
-            <button class="ope" >Lista</button>
     </header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+<button class="second-button">Lista</button>
+
     <nav id="sidebar">
         <a href="#inicio">Inicio</a>
         <a href="#jodidos">Jodidos</a>

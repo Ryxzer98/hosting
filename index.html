@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumoUrbano</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Fondo inicial negro */
+            overflow: hidden; /* Evita la barra de desplazamiento */
+        }
+
+        .fade-out {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 1); /* Fondo inicial completamente negro */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeOut 9s ease forwards; /* Animación de desvanecimiento de 6 segundos */
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden; /* Oculta el elemento al final de la animación */
+            }
+        }
+
+        .fade-out img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        .fade-out p {
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Estilos originales */
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            color: white;
+            font-family: cursive;
+        }
+
+        header img {
+            max-width: 100%;
+            height: 200px; /* Ajusta la altura de la imagen del encabezado */
+            margin: 10px auto;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: transparent; /* Establece el color de fondo transparente */
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1000;
+            font-size: 25px;
+            font-family: cursive;
+        }
+
+        nav {
+            display: none;
+            position: fixed;
+            top: 60px;
+            left: 20px;
+            width: 200px;
+            background-color: #000000;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #11033d;
+        }
+
+        .main {
+            padding: 20px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 300px; /* Ajusta la altura del carrusel */
+            object-fit: contain; /* Muestra la imagen completa */
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        .products-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        body::-webkit-scrollbar {
+    width: 0; /* Ancho de la barra de desplazamiento vertical */
+    background: transparent; /* Fondo transparente */
+}
+        .products {
+    display: flex;
+    overflow-x: auto; /* Habilitar desplazamiento horizontal */
+    gap: 20px; /* Espacio entre los productos */
+    padding: 10px; /* Espacio interno */
+    justify-content: flex-start; /* Alinear los productos al inicio */
+    flex-wrap: nowrap; /* Evitar el retorno a la línea siguiente */
+}
+.products::-webkit-scrollbar {
+    width: 0; /* Ancho de la barra de desplazamiento */
+    background: transparent; /* Fondo transparente */
+}
+
+.products::-webkit-scrollbar-thumb {
+    background: transparent; /* Fondo del pulgar transparente */
+}
+
+.product {
+    background-color: #000000;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 300px; /* Establecer un ancho fijo para los productos */
+    flex-shrink: 0; /* Evitar que los productos se reduzcan en tamaño */
+}
+
+
+        h3 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .magnets {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+        }
+
+        .magnet {
+            width: 100px; /* Ajusta el tamaño del imán */
+            height: 100px; /* Ajusta el tamaño del imán */
+            border-radius: 50%; /* Hace que el imán sea circular */
+            background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+        }
+    </style>
+</head>
+<body>
+    <div class="fade-out">
+        <img src="https://i.ibb.co/qm0QmbM/Monochrome-Ilustration-Graffiti-Logo.png" alt="Imagen de transición">
+        <center>
+        <p class="puto">Encuentra tu nube perfecta en <br>nuestra tienda de vapes</p>
+    </center>
+        <style>
+            .puto {
+                font-size: 20px;
+                font-family: cursive;
+            }
+        </style>
+    </div>
+    <header>
+        <img src="https://i.ibb.co/qm0QmbM/Monochrome-Ilustration-Graffiti-Logo.png" alt="Logo">
+    </header>
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+    <nav id="sidebar">
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="main" id="main-content">
+        <div class="carousel">
+            <img src="https://i.ibb.co/rdZrVmf/image.jpg" class="active" alt="Imagen 1">
+            <img src="https://i.ibb.co/7YqYQdW/image-1.jpg" alt="Imagen 2">
+            <img src="https://i.ibb.co/HG6Jqt2/image-3.jpg" alt="Imagen 3">
+        </div>
+        <div class="magnets">
+            <div class="magnet" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmMS9Gs3Ke7tz1CHsvSvLQsOwzEz6SZpofwg&s');"></div>
+            <div class="magnet" style="background-image: url('https://mrvapes.mx/cdn/shop/collections/iplay.png?v=1696545409');"></div>
+            <div class="magnet" style="background-image: url('https://snusmania.eu/cdn/shop/collections/elf_bar_logo.png?v=1699975103');"></div>
+        </div>
+
+
+        <div class="products-section">
+            <h2>Nuevos</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://donmaskking.com/cdn/shop/files/banana_ice.webp?v=1713580538&width=600" alt="Producto 1">
+                    <h3>Mayweather Vape 15k hits</h3>
+                    <p>$ 550.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.ibb.co/L5DMSjW/image.png" alt="Producto 2">
+                    <h3>Wonder G10 10K hits</h3>
+                    <p>$ 500.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://donmaskking.com/cdn/shop/files/APPLE-MANGO-PEAR_FRONT_87c8e987-e681-43df-8637-b70fff796d09.webp?v=1709069803&width=600" alt="Producto 3">
+                    <h3>Iron Mike 15,000 hits</h3>
+                    <p>$ 600.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.ibb.co/vYZN7qD/image.png" alt="Producto 3">
+                    <h3>Elfbar Touch 10k hits</h3>
+                    <p>$ 550.00 MXN</p>
+                </div>
+            </div>
+        </div>
+        <div class="products-section">
+            <h2>Jodidos 200 - 350</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://i.ibb.co/VY41KH0/image.png" alt="Producto 1">
+                    <h3>IPlay Max 2.5K hits</h3>
+                    <p>$ 280.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://shishashop.mx/cdn/shop/products/FLY3B_1024x1024@2x.png?v=1667325473" alt="Producto 2">
+                    <h3>Fly Jumbo 5K hits</h3>
+                    <p>$ 350.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://i.ibb.co/kyQhz1Y/image.png" alt="Producto 3">
+                    <h3>Wonder G4 4.5K hits</h3>
+                    <p>$ 550.00 MXN</p>
+                </div>
+            </div>
+        </div>
+        <div class="products-section">
+            <h2>Productos</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://i.ibb.co/xgmbC0s/image.png" alt="Producto 1">
+                    <h3>Waka SoPro 10K hits</h3>
+                    <p>$ 700.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://www.grino.mx/cdn/shop/files/X-boxPeachMint.png?v=1712783466" alt="Producto 2">
+                    
+                    <h3>Iplay Box 4k hits</h3>
+                    <p>$ 400.00 MXN</p>
+                </div>
+                <div class="product">
+                    <img src="https://donmaskking.com/cdn/shop/files/mango-peach_55c4b3db-ffc1-4b50-b666-845374018cf8.webp?v=1708689740&width=600" alt="Producto 3">
+                    <h3>Bugatti 6k hits</h3>
+                    <p>$ 550.00 MXN</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Función para ocultar la capa de transición y permitir el desplazamiento
+        function hideTransition() {
+            const transitionLayer = document.querySelector('.fade-out');
+            transitionLayer.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Permitir desplazamiento
+        }
+
+        // Ejecutar la función después de 6 segundos
+        setTimeout(hideTransition, 6000);
+
+        // Función para mostrar/ocultar el menú
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar.style.display === 'block') {
+                sidebar.style.display = 'none';
+            } else {
+                sidebar.style.display = 'block';
+            }
+        }
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel img');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 3000);
+    </script>
+
+</body>
+</html>

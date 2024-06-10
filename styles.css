@@ -440,10 +440,12 @@
             z-index: 999;
         }
         
-        .overlay-content {
-            background-color: #fff;
+         .overlay-content {
+            background-color: #121212;
             padding: 20px;
             border-radius: 10px;
+            color: white;
+            font-family: cursive;
         }
         
         .hidden {

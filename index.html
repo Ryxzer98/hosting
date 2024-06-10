@@ -26,7 +26,7 @@
     </header>
     <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
     <button class="second-button" id="cartButton" onclick="toggleCart()">Carrito</button>
-<div id="cart"></div>
+    <div id="cart"></div>
 
 
     <nav id="sidebar">
@@ -74,29 +74,40 @@
                 <body>
                     <div class="container">
                         <div class="product">
-                            <img src="https://donmaskking.com/cdn/shop/files/banana_ice.webp?v=1713580538&width=600" alt="Producto 1" onclick="showOptions('overlayProducto1')">
+                            <img src="https://donmaskking.com/cdn/shop/files/banana_ice.webp?v=1713580538&width=600"
+                                alt="Producto 1" onclick="showOptions('overlayProducto1')">
                             <h3>Mayweather Vape 15k hits</h3>
                             <p>$ 650.00 MXN</p>
                         </div>
                     </div>
-                    
+
                     <div class="overlay hidden" id="overlayProducto1" onclick="hideOptions('overlayProducto1')">
                         <div class="overlay-content">
                             <h1>Sabores</h1>
                             <form>
                                 <ul class="centered-list">
-                                    <input type="radio" name="sabor" value="Banana Ice" onclick="addToCart('Mayweather Vape', 'Banana Ice')">Banana Ice<br>
-                                    <input type="radio" name="sabor" value="Black Ice" onclick="addToCart('Mayweather Vape', 'Black Ice')">Black Ice<br>
-                                    <input type="radio" name="sabor" value="Blue Mint Ice" onclick="addToCart('Mayweather Vape', 'Blue Mint Ice')">Blue Mint Ice<br>
-                                    <input type="radio" name="sabor" value="Blue Razz" onclick="addToCart('Mayweather Vape', 'Blue Razz')">Blue Razz<br>
-                                    <input type="radio" name="sabor" value="Lush Ice" onclick="addToCart('Mayweather Vape', 'Lush Ice')">Lush Ice<br>
-                                    <input type="radio" name="sabor" value="Mango Ice" onclick="addToCart('Mayweather Vape', 'Mango Ice')">Mango Ice<br>
-                                    <input type="radio" name="sabor" value="Miami Mint" onclick="addToCart('Mayweather Vape', 'Miami Mint')">Miami Mint<br>
-                                    <input type="radio" name="sabor" value="Mint Ice" onclick="addToCart('Mayweather Vape', 'Mint Ice')">Mint Ice<br>
-                                    <input type="radio" name="sabor" value="Peach Ice" onclick="addToCart('Mayweather Vape', 'Peach Ice')">Peach Ice<br>
-                                    <input type="radio" name="sabor" value="Pineapple Mango Ice" onclick="addToCart('Mayweather Vape', 'Pineapple Mango Ice')">Pineapple Mango Ice<br>
+                                    <input type="radio" name="sabor" value="Banana Ice"
+                                        onclick="addToCart('Mayweather Vape', 'Banana Ice')">Banana Ice<br>
+                                    <input type="radio" name="sabor" value="Black Ice"
+                                        onclick="addToCart('Mayweather Vape', 'Black Ice')">Black Ice<br>
+                                    <input type="radio" name="sabor" value="Blue Mint Ice"
+                                        onclick="addToCart('Mayweather Vape', 'Blue Mint Ice')">Blue Mint Ice<br>
+                                    <input type="radio" name="sabor" value="Blue Razz"
+                                        onclick="addToCart('Mayweather Vape', 'Blue Razz')">Blue Razz<br>
+                                    <input type="radio" name="sabor" value="Lush Ice"
+                                        onclick="addToCart('Mayweather Vape', 'Lush Ice')">Lush Ice<br>
+                                    <input type="radio" name="sabor" value="Mango Ice"
+                                        onclick="addToCart('Mayweather Vape', 'Mango Ice')">Mango Ice<br>
+                                    <input type="radio" name="sabor" value="Miami Mint"
+                                        onclick="addToCart('Mayweather Vape', 'Miami Mint')">Miami Mint<br>
+                                    <input type="radio" name="sabor" value="Mint Ice"
+                                        onclick="addToCart('Mayweather Vape', 'Mint Ice')">Mint Ice<br>
+                                    <input type="radio" name="sabor" value="Peach Ice"
+                                        onclick="addToCart('Mayweather Vape', 'Peach Ice')">Peach Ice<br>
+                                    <input type="radio" name="sabor" value="Pineapple Mango Ice"
+                                        onclick="addToCart('Mayweather Vape', 'Pineapple Mango Ice')">Pineapple Mango
+                                    Ice<br>
                                 </ul>
-                                <button type="submit"><b>Pideme !</b></button>
                             </form>
                         </div>
                     </div>
@@ -114,19 +125,32 @@
                         <div class="overlay-content">
                             <h1>Sabores</h1>
                             <ul class="centered-list">
-                                <input type="radio" name="sabor" value="Cool Mint">Cool Mint<br>
-                                <input type="radio" name="sabor" value="Kiwi Passion Fruit Guava">Kiwi Passion Fruit
-                                Guava<br>
-                                <input type="radio" name="sabor" value="Cotton Candy">Cotton Candy<br>
-                                <input type="radio" name="sabor" value="Kiwi Strawberry">Kiwi Strawberry<br>
-                                <input type="radio" name="sabor" value="Strawberry Watermelon">Strawberry Watermelon<br>
-                                <input type="radio" name="sabor" value="Mango Orange Watermelon">Mango Orange
+                                <input type="radio" name="sabor" value="Cool Mint"
+                                    onclick="addToCart('Wonder G10 10K hits', 'Cool Mint')">Cool Mint<br>
+                                <input type="radio" name="sabor" value="Kiwi Passion Fruit Guava"
+                                    onclick="addToCart('Wonder G10 10K hits', 'Kiwi Passion Fruit Guava')">Kiwi Passion
+                                Fruit Guava<br>
+                                <input type="radio" name="sabor" value="Cotton Candy"
+                                    onclick="addToCart('Wonder G10 10K hits', 'Cotton Candy')">Cotton Candy<br>
+                                <input type="radio" name="sabor" value="Kiwi Strawberry"
+                                    onclick="addToCart('Wonder G10 10K hits', 'Kiwi Strawberry')">Kiwi Strawberry<br>
+                                <input type="radio" name="sabor" value="Strawberry Watermelon"
+                                    onclick="addToCart('Wonder G10 10K hits', 'Strawberry Watermelon')">Strawberry
                                 Watermelon<br>
-                                <input type="radio" name="sabor" value="Peach Ice">Peach Ice<br>
-                                <input type="radio" name="sabor" value="Coconut">Coconut<br>
-                                <input type="radio" name="sabor" value="Blueberry">Blueberry<br>
-                                <input type="radio" name="sabor" value="Strawberry Coconut">Strawberry Coconut<br>
+                                <input type="radio" name="sabor" value="Mango Orange Watermelon"
+                                    onclick="addToCart('Wonder G10 10K hits', 'Mango Orange Watermelon')">Mango Orange
+                                Watermelon<br>
+                                <input type="radio" name="sabor" value="Peach Ice"
+                                    onclick="addToCart('Wonder G10 10K hits', 'Peach Ice')">Peach Ice<br>
+                                <input type="radio" name="sabor" value="Coconut"
+                                    onclick="addToCart('Wonder G10 10K hits', 'Coconut')">Coconut<br>
+                                <input type="radio" name="sabor" value="Blueberry"
+                                    onclick="addToCart('Wonder G10 10K hits', 'Blueberry')">Blueberry<br>
+                                <input type="radio" name="sabor" value="Strawberry Coconut"
+                                    onclick="addToCart('Wonder G10 10K hits', 'Strawberry Coconut')">Strawberry
+                                Coconut<br>
                             </ul>
+
                         </div>
                     </div>
 
@@ -143,27 +167,49 @@
                         <div class="overlay-content">
                             <h1>Sabores</h1>
                             <ul>
-                                <input type="radio" name="sabor" value="Apple Mango Pear">Apple Mango Pear<br>
-                                <input type="radio" name="sabor" value="Apple Peach">Apple Peach<br>
-                                <input type="radio" name="sabor" value="Blue Razz">Blue Razz<br>
-                                <input type="radio" name="sabor" value="Cool Mint">Cool Mint<br>
-                                <input type="radio" name="sabor" value="Frozen Banana">Frozen Banana<br>
-                                <input type="radio" name="sabor" value="Frozen Blueberry">Frozen Blueberry<br>
-                                <input type="radio" name="sabor" value="Frozen Grape">Frozen Grape<br>
-                                <input type="radio" name="sabor" value="Frozen Mango">Frozen Mango<br>
-                                <input type="radio" name="sabor" value="Frozen Peach">Frozen Peach<br>
-                                <input type="radio" name="sabor" value="Fuji Apple">Fuji Apple<br>
-                                <input type="radio" name="sabor" value="Grape Razz">Grape Razz<br>
-                                <input type="radio" name="sabor" value="Lush Lime">Lush Lime<br>
-                                <input type="radio" name="sabor" value="Melon Berry">Melon Berry<br>
-                                <input type="radio" name="sabor" value="Melon Head">Melon Head<br>
-                                <input type="radio" name="sabor" value="Peach Watermelon">Peach Watermelon<br>
-                                <input type="radio" name="sabor" value="Watermelon">Watermelon<br>
-                                <input type="radio" name="sabor" value="Watermelon Bubblegum">Watermelon Bubblegum<br>
-                                <input type="radio" name="sabor" value="Watermelon Gummies">Watermelon Gummies<br>
-                                <input type="radio" name="sabor" value="White Gummy Bear">White Gummy Bear<br>
-                                <input type="radio" name="sabor" value="Toro Rosso">Toro Rosso<br>
+                                <input type="radio" name="sabor" value="Apple Mango Pear"
+                                    onclick="addToCart('Iron Mike 15K', 'Apple Mango Pear')">Apple Mango Pear<br>
+                                <input type="radio" name="sabor" value="Apple Peach"
+                                    onclick="addToCart('Iron Mike 15K', 'Apple Peach')">Apple Peach<br>
+                                <input type="radio" name="sabor" value="Blue Razz"
+                                    onclick="addToCart('Iron Mike 15K', 'Blue Razz')">Blue Razz<br>
+                                <input type="radio" name="sabor" value="Cool Mint"
+                                    onclick="addToCart('Iron Mike 15K', 'Cool Mint')">Cool Mint<br>
+                                <input type="radio" name="sabor" value="Frozen Banana"
+                                    onclick="addToCart('Iron Mike 15K', 'Frozen Banana')">Frozen Banana<br>
+                                <input type="radio" name="sabor" value="Frozen Blueberry"
+                                    onclick="addToCart('Iron Mike 15K', 'Frozen Blueberry')">Frozen Blueberry<br>
+                                <input type="radio" name="sabor" value="Frozen Grape"
+                                    onclick="addToCart('Iron Mike 15K', 'Frozen Grape')">Frozen Grape<br>
+                                <input type="radio" name="sabor" value="Frozen Mango"
+                                    onclick="addToCart('Iron Mike 15K', 'Frozen Mango')">Frozen Mango<br>
+                                <input type="radio" name="sabor" value="Frozen Peach"
+                                    onclick="addToCart('Iron Mike 15K', 'Frozen Peach')">Frozen Peach<br>
+                                <input type="radio" name="sabor" value="Fuji Apple"
+                                    onclick="addToCart('Iron Mike 15K', 'Fuji Apple')">Fuji Apple<br>
+                                <input type="radio" name="sabor" value="Grape Razz"
+                                    onclick="addToCart('Iron Mike 15K', 'Grape Razz')">Grape Razz<br>
+                                <input type="radio" name="sabor" value="Lush Lime"
+                                    onclick="addToCart('Iron Mike 15K', 'Lush Lime')">Lush Lime<br>
+                                <input type="radio" name="sabor" value="Melon Berry"
+                                    onclick="addToCart('Iron Mike 15K', 'Melon Berry')">Melon Berry<br>
+                                <input type="radio" name="sabor" value="Melon Head"
+                                    onclick="addToCart('Iron Mike 15K', 'Melon Head')">Melon Head<br>
+                                <input type="radio" name="sabor" value="Peach Watermelon"
+                                    onclick="addToCart('Iron Mike 15K', 'Peach Watermelon')">Peach Watermelon<br>
+                                <input type="radio" name="sabor" value="Watermelon"
+                                    onclick="addToCart('Iron Mike 15K', 'Watermelon')">Watermelon<br>
+                                <input type="radio" name="sabor" value="Watermelon Bubblegum"
+                                    onclick="addToCart('Iron Mike 15K', 'Watermelon Bubblegum')">Watermelon
+                                Bubblegum<br>
+                                <input type="radio" name="sabor" value="Watermelon Gummies"
+                                    onclick="addToCart('Iron Mike 15K', 'Watermelon Gummies')">Watermelon Gummies<br>
+                                <input type="radio" name="sabor" value="White Gummy Bear"
+                                    onclick="addToCart('Iron Mike 15K', 'White Gummy Bear')">White Gummy Bear<br>
+                                <input type="radio" name="sabor" value="Toro Rosso"
+                                    onclick="addToCart('Iron Mike 15K', 'Toro Rosso')">Toro Rosso<br>
                             </ul>
+
                         </div>
                     </div>
 
@@ -179,19 +225,31 @@
                         <div class="overlay-content">
                             <h1>Sabores</h1>
                             <ul>
-                                <input type="radio" name="sabor" value="Blue Razz Ice">Blue Razz Ice<br>
-                                <input type="radio" name="sabor" value="Blueberry Watermelon">Blueberry Watermelon<br>
-                                <input type="radio" name="sabor" value="Cherry Lemon">Cherry Lemon<br>
-                                <input type="radio" name="sabor" value="Citrus Grape">Citrus Grape<br>
-                                <input type="radio" name="sabor" value="Coconut Banana">Coconut Banana<br>
-                                <input type="radio" name="sabor" value="Dragon Strawnana">Dragon Strawnana<br>
-                                <input type="radio" name="sabor" value="Georgia Peach">Georgia Peach<br>
-                                <input type="radio" name="sabor" value="La Mint">La Mint<br>
-                                <input type="radio" name="sabor" value="Mount Splash">Mount Splash<br>
-                                <input type="radio" name="sabor" value="OMG">OMG<br>
-                                <input type="radio" name="sabor" value="Ruby Raspberry">Ruby Raspberry<br>
-                                <input type="radio" name="sabor" value="Watermelon BG">Watermelon BG<br>
-
+                                <input type="radio" name="sabor" value="Blue Razz Ice"
+                                    onclick="addToCart('Elfbar Touch 10K', 'Blue Razz Ice')">Blue Razz Ice<br>
+                                <input type="radio" name="sabor" value="Blueberry Watermelon"
+                                    onclick="addToCart('Elfbar Touch 10K', 'Blueberry Watermelon')">Blueberry
+                                Watermelon<br>
+                                <input type="radio" name="sabor" value="Cherry Lemon"
+                                    onclick="addToCart('Elfbar Touch 10K', 'Cherry Lemon')">Cherry Lemon<br>
+                                <input type="radio" name="sabor" value="Citrus Grape"
+                                    onclick="addToCart('Elfbar Touch 10K', 'Citrus Grape')">Citrus Grape<br>
+                                <input type="radio" name="sabor" value="Coconut Banana"
+                                    onclick="addToCart('Elfbar Touch 10K', 'Coconut Banana')">Coconut Banana<br>
+                                <input type="radio" name="sabor" value="Dragon Strawnana"
+                                    onclick="addToCart('Elfbar Touch 10K', 'Dragon Strawnana')">Dragon Strawnana<br>
+                                <input type="radio" name="sabor" value="Georgia Peach"
+                                    onclick="addToCart('Elfbar Touch 10K', 'Georgia Peach')">Georgia Peach<br>
+                                <input type="radio" name="sabor" value="La Mint"
+                                    onclick="addToCart('Elfbar Touch 10K', 'La Mint')">La Mint<br>
+                                <input type="radio" name="sabor" value="Mount Splash"
+                                    onclick="addToCart('Elfbar Touch 10K', 'Mount Splash')">Mount Splash<br>
+                                <input type="radio" name="sabor" value="OMG"
+                                    onclick="addToCart('Elfbar Touch 10K', 'OMG')">OMG<br>
+                                <input type="radio" name="sabor" value="Ruby Raspberry"
+                                    onclick="addToCart('Elfbar Touch 10K', 'Ruby Raspberry')">Ruby Raspberry<br>
+                                <input type="radio" name="sabor" value="Watermelon BG"
+                                    onclick="addToCart('Elfbar Touch 10K', 'Watermelon BG')">Watermelon BG<br>
                             </ul>
                         </div>
                     </div>
@@ -213,11 +271,14 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Coconut">Coconut<br>
-                            <input type="radio" name="sabor" value="Banana">Banana<br>
-                            <input type="radio" name="sabor" value="Melon">Melon<br>
-                            <input type="radio" name="sabor" value="Lychee Ice">Lychee Ice<br>
-
+                            <input type="radio" name="sabor" value="Coconut"
+                                onclick="addToCart('Wonder XL', 'Coconut')">Coconut<br>
+                            <input type="radio" name="sabor" value="Banana"
+                                onclick="addToCart('Wonder XL', 'Banana')">Banana<br>
+                            <input type="radio" name="sabor" value="Melon"
+                                onclick="addToCart('Wonder XL', 'Melon')">Melon<br>
+                            <input type="radio" name="sabor" value="Lychee Ice"
+                                onclick="addToCart('Wonder XL', 'Lychee Ice')">Lychee Ice<br>
 
                         </ul>
                     </div>
@@ -235,15 +296,25 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Cucumber Lemonade">Cucumber Lemonade<br>
-                            <input type="radio" name="sabor" value="Sour Apple Melon">Sour Apple Melon<br>
-                            <input type="radio" name="sabor" value="Pineapple Coconut">Pineapple Coconut<br>
-                            <input type="radio" name="sabor" value="Lush Ice">Lush Ice<br>
-                            <input type="radio" name="sabor" value="Bluerazz Lemonade">Bluerazz Lemonade<br>
-                            <input type="radio" name="sabor" value="Cranberry Grape">Cranberry Grape<br>
-                            <input type="radio" name="sabor" value="Banana Chery Dragon Fruit">Banana Chery Dragon Fruit<br>
-                            <input type="radio" name="sabor" value="Grape Strawberry">Grape Strawberry<br>
-                            <input type="radio" name="sabor" value="Watermelon Banana">Watermelon Banana<br>
+                            <input type="radio" name="sabor" value="Cucumber Lemonade"
+                                onclick="addToCart('IPlay Max', 'Cucumber Lemonade')">Cucumber Lemonade<br>
+                            <input type="radio" name="sabor" value="Sour Apple Melon"
+                                onclick="addToCart('IPlay Max', 'Sour Apple Melon')">Sour Apple Melon<br>
+                            <input type="radio" name="sabor" value="Pineapple Coconut"
+                                onclick="addToCart('IPlay Max', 'Pineapple Coconut')">Pineapple Coconut<br>
+                            <input type="radio" name="sabor" value="Lush Ice"
+                                onclick="addToCart('IPlay Max', 'Lush Ice')">Lush Ice<br>
+                            <input type="radio" name="sabor" value="Bluerazz Lemonade"
+                                onclick="addToCart('IPlay Max', 'Bluerazz Lemonade')">Bluerazz Lemonade<br>
+                            <input type="radio" name="sabor" value="Cranberry Grape"
+                                onclick="addToCart('IPlay Max', 'Cranberry Grape')">Cranberry Grape<br>
+                            <input type="radio" name="sabor" value="Banana Chery Dragon Fruit"
+                                onclick="addToCart('IPlay Max', 'Banana Chery Dragon Fruit')">Banana Chery Dragon
+                            Fruit<br>
+                            <input type="radio" name="sabor" value="Grape Strawberry"
+                                onclick="addToCart('IPlay Max', 'Grape Strawberry')">Grape Strawberry<br>
+                            <input type="radio" name="sabor" value="Watermelon Banana"
+                                onclick="addToCart('IPlay Max', 'Watermelon Banana')">Watermelon Banana<br>
 
                         </ul>
                     </div>
@@ -261,26 +332,46 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Black Ice">Black Ice<br>
-                            <input type="radio" name="sabor" value="Cool Mint">Cool Mint<br>
-                            <input type="radio" name="sabor" value="Mexico Mango">Mexico Mango<br>
-                            <input type="radio" name="sabor" value="Miami Mint">Miami Mint<br>
-                            <input type="radio" name="sabor" value="Strawberry Mango">Strawberry Mango<br>
-                            <input type="radio" name="sabor" value="Rainbow Candy">Rainbow Candy<br>
-                            <input type="radio" name="sabor" value="Apple">Apple<br>
-                            <input type="radio" name="sabor" value="Mixed Barries">Mixed Barries<br>
-                            <input type="radio" name="sabor" value="Lemon Mint">Lemon Mint<br>
-                            <input type="radio" name="sabor" value="Banana">Banana<br>
-                            <input type="radio" name="sabor" value="Piña Colada">Piña Colada<br>
-                            <input type="radio" name="sabor" value="Berry Lemonade">Berry Lemonade<br>
-                            <input type="radio" name="sabor" value="Strawberry Coconut Ice">Strawberry Coconut Ice<br>
-                            <input type="radio" name="sabor" value="Peach Ice">Peach Ice<br>
-                            <input type="radio" name="sabor" value="Lush Ice">Lush Ice<br>
-                            <input type="radio" name="sabor" value="Strawberry Watermelon">Strawberry Watermelon<br>
-                            <input type="radio" name="sabor" value="Mango Lychee">Mango Lychee<br>
-                            <input type="radio" name="sabor" value="Blueberry Ice">Blueberry Ice<br>
-                            <input type="radio" name="sabor" value="Coconut Ice">Coconut Ice<br>
-                            
+                            <input type="radio" name="sabor" value="Black Ice"
+                                onclick="addToCart('Wonder G4', 'Black Ice')">Black Ice<br>
+                            <input type="radio" name="sabor" value="Cool Mint"
+                                onclick="addToCart('Wonder G4', 'Cool Mint')">Cool Mint<br>
+                            <input type="radio" name="sabor" value="Mexico Mango"
+                                onclick="addToCart('Wonder G4', 'Mexico Mango')">Mexico Mango<br>
+                            <input type="radio" name="sabor" value="Miami Mint"
+                                onclick="addToCart('Wonder G4', 'Miami Mint')">Miami Mint<br>
+                            <input type="radio" name="sabor" value="Strawberry Mango"
+                                onclick="addToCart('Wonder G4', 'Strawberry Mango')">Strawberry Mango<br>
+                            <input type="radio" name="sabor" value="Rainbow Candy"
+                                onclick="addToCart('Wonder G4', 'Rainbow Candy')">Rainbow Candy<br>
+                            <input type="radio" name="sabor" value="Apple"
+                                onclick="addToCart('Wonder G4', 'Apple')">Apple<br>
+                            <input type="radio" name="sabor" value="Mixed Barries"
+                                onclick="addToCart('Wonder G4', 'Mixed Barries')">Mixed Barries<br>
+                            <input type="radio" name="sabor" value="Lemon Mint"
+                                onclick="addToCart('Wonder G4', 'Lemon Mint')">Lemon Mint<br>
+                            <input type="radio" name="sabor" value="Banana"
+                                onclick="addToCart('Wonder G4', 'Banana')">Banana<br>
+                            <input type="radio" name="sabor" value="Piña Colada"
+                                onclick="addToCart('Wonder G4', 'Piña Colada')">Piña Colada<br>
+                            <input type="radio" name="sabor" value="Berry Lemonade"
+                                onclick="addToCart('Wonder G4', 'Berry Lemonade')">Berry Lemonade<br>
+                            <input type="radio" name="sabor" value="Strawberry Coconut Ice"
+                                onclick="addToCart('Wonder G4', 'Strawberry Coconut Ice')">Strawberry Coconut Ice<br>
+                            <input type="radio" name="sabor" value="Peach Ice"
+                                onclick="addToCart('Wonder G4', 'Peach Ice')">Peach Ice<br>
+                            <input type="radio" name="sabor" value="Lush Ice"
+                                onclick="addToCart('Wonder G4', 'Lush Ice')">Lush Ice<br>
+                            <input type="radio" name="sabor" value="Strawberry Watermelon"
+                                onclick="addToCart('Wonder G4', 'Strawberry Watermelon')">Strawberry Watermelon<br>
+                            <input type="radio" name="sabor" value="Mango Lychee"
+                                onclick="addToCart('Wonder G4', 'Mango Lychee')">Mango Lychee<br>
+                            <input type="radio" name="sabor" value="Blueberry Ice"
+                                onclick="addToCart('Wonder G4', 'Blueberry Ice')">Blueberry Ice<br>
+                            <input type="radio" name="sabor" value="Coconut Ice"
+                                onclick="addToCart('Wonder G4', 'Coconut Ice')">Coconut Ice<br>
+
+
                         </ul>
                     </div>
                 </div>
@@ -298,18 +389,29 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Mango Peach Pineapple">Mango Peach Pineapple<br>
-<input type="radio" name="sabor" value="Cinnamon Mint">Cinnamon Mint<br>
-<input type="radio" name="sabor" value="Strawberry Watermelon Bubblegum">Strawberry Watermelon Bubblegum<br>
-<input type="radio" name="sabor" value="Peach Ice">Peach Ice<br>
-<input type="radio" name="sabor" value="Grape Ice">Grape Ice<br>
-<input type="radio" name="sabor" value="Cononut">Cononut<br>
-<input type="radio" name="sabor" value="Strawberry Kiwi Lychee">Strawberry Kiwi Lychee<br>
-<input type="radio" name="sabor" value="Cool MInt">Cool MInt<br>
-<input type="radio" name="sabor" value="Blueberry">Blueberry<br>
-<input type="radio" name="sabor" value="Lush">Lush<br>
-<input type="radio" name="sabor" value="Lychee">Lychee<br>
-
+                            <input type="radio" name="sabor" value="Mango Peach Pineapple"
+                                onclick="addToCart('Fly Jumbo', 'Mango Peach Pineapple')">Mango Peach Pineapple<br>
+                            <input type="radio" name="sabor" value="Cinnamon Mint"
+                                onclick="addToCart('Fly Jumbo', 'Cinnamon Mint')">Cinnamon Mint<br>
+                            <input type="radio" name="sabor" value="Strawberry Watermelon Bubblegum"
+                                onclick="addToCart('Fly Jumbo', 'Strawberry Watermelon Bubblegum')">Strawberry
+                            Watermelon Bubblegum<br>
+                            <input type="radio" name="sabor" value="Peach Ice"
+                                onclick="addToCart('Fly Jumbo', 'Peach Ice')">Peach Ice<br>
+                            <input type="radio" name="sabor" value="Grape Ice"
+                                onclick="addToCart('Fly Jumbo', 'Grape Ice')">Grape Ice<br>
+                            <input type="radio" name="sabor" value="Cononut"
+                                onclick="addToCart('Fly Jumbo', 'Cononut')">Cononut<br>
+                            <input type="radio" name="sabor" value="Strawberry Kiwi Lychee"
+                                onclick="addToCart('Fly Jumbo', 'Strawberry Kiwi Lychee')">Strawberry Kiwi Lychee<br>
+                            <input type="radio" name="sabor" value="Cool MInt"
+                                onclick="addToCart('Fly Jumbo', 'Cool MInt')">Cool MInt<br>
+                            <input type="radio" name="sabor" value="Blueberry"
+                                onclick="addToCart('Fly Jumbo', 'Blueberry')">Blueberry<br>
+                            <input type="radio" name="sabor" value="Lush"
+                                onclick="addToCart('Fly Jumbo', 'Lush')">Lush<br>
+                            <input type="radio" name="sabor" value="Lychee"
+                                onclick="addToCart('Fly Jumbo', 'Lychee')">Lychee<br>
                         </ul>
                     </div>
                 </div>
@@ -332,22 +434,37 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Bluerazz ice">Bluerazz ice<br>
-<input type="radio" name="sabor" value="Strawberry banana">Strawberry banana<br>
-<input type="radio" name="sabor" value="Pomelo Pearl Grape">Pomelo Pearl Grape<br>
-<input type="radio" name="sabor" value="Tropical rainbow blast">Tropical rainbow blast<br>
-<input type="radio" name="sabor" value="Pink bomb">Pink bomb<br>
-<input type="radio" name="sabor" value="Cantaloupe apple">Cantaloupe apple<br>
-<input type="radio" name="sabor" value="California cherry">California cherry<br>
-<input type="radio" name="sabor" value="Peach pie">Peach pie<br>
-<input type="radio" name="sabor" value="Pineapple coconut ice">Pineapple coconut ice<br>
-<input type="radio" name="sabor" value="Passion fruit kiwi lime">Passion fruit kiwi lime<br>
-<input type="radio" name="sabor" value="Peach Mango Watermelon">Peach Mango Watermelon<br>
-<input type="radio" name="sabor" value="Super berry">Super berry<br>
-<input type="radio" name="sabor" value="Watermelon ice">Watermelon ice<br>
-<input type="radio" name="sabor" value="Tropical Island">Tropical Island<br>
-<input type="radio" name="sabor" value="Rainbow cloudz">Rainbow cloudz<br>
-
+                            <input type="radio" name="sabor" value="Bluerazz ice"
+                                onclick="addToCart('Funky i7000', 'Bluerazz ice')">Bluerazz ice<br>
+                            <input type="radio" name="sabor" value="Strawberry banana"
+                                onclick="addToCart('Funky i7000', 'Strawberry banana')">Strawberry banana<br>
+                            <input type="radio" name="sabor" value="Pomelo Pearl Grape"
+                                onclick="addToCart('Funky i7000', 'Pomelo Pearl Grape')">Pomelo Pearl Grape<br>
+                            <input type="radio" name="sabor" value="Tropical rainbow blast"
+                                onclick="addToCart('Funky i7000', 'Tropical rainbow blast')">Tropical rainbow blast<br>
+                            <input type="radio" name="sabor" value="Pink bomb"
+                                onclick="addToCart('Funky i7000', 'Pink bomb')">Pink bomb<br>
+                            <input type="radio" name="sabor" value="Cantaloupe apple"
+                                onclick="addToCart('Funky i7000', 'Cantaloupe apple')">Cantaloupe apple<br>
+                            <input type="radio" name="sabor" value="California cherry"
+                                onclick="addToCart('Funky i7000', 'California cherry')">California cherry<br>
+                            <input type="radio" name="sabor" value="Peach pie"
+                                onclick="addToCart('Funky i7000', 'Peach pie')">Peach pie<br>
+                            <input type="radio" name="sabor" value="Pineapple coconut ice"
+                                onclick="addToCart('Funky i7000', 'Pineapple coconut ice')">Pineapple coconut ice<br>
+                            <input type="radio" name="sabor" value="Passion fruit kiwi lime"
+                                onclick="addToCart('Funky i7000', 'Passion fruit kiwi lime')">Passion fruit kiwi
+                            lime<br>
+                            <input type="radio" name="sabor" value="Peach Mango Watermelon"
+                                onclick="addToCart('Funky i7000', 'Peach Mango Watermelon')">Peach Mango Watermelon<br>
+                            <input type="radio" name="sabor" value="Super berry"
+                                onclick="addToCart('Funky i7000', 'Super berry')">Super berry<br>
+                            <input type="radio" name="sabor" value="Watermelon ice"
+                                onclick="addToCart('Funky i7000', 'Watermelon ice')">Watermelon ice<br>
+                            <input type="radio" name="sabor" value="Tropical Island"
+                                onclick="addToCart('Funky i7000', 'Tropical Island')">Tropical Island<br>
+                            <input type="radio" name="sabor" value="Rainbow cloudz"
+                                onclick="addToCart('Funky i7000', 'Rainbow cloudz')">Rainbow cloudz<br>
                         </ul>
                     </div>
                 </div>
@@ -355,7 +472,7 @@
                 <div class="container">
                     <div class="product" onclick="showOptions('overlayProducto10')">
                         <img src="https://i.ibb.co/C7fLv9x/image.png" alt="Producto 1">
-                        <h3>Iplay Vibar 6.5K hits</h3>
+                        <h3>IPlay Vibar 6.5K hits</h3>
                         <p>$ 420.00 MXN</p>
                     </div>
                 </div>
@@ -364,17 +481,30 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="VIBAR Blackcurrant mint">VIBAR Blackcurrant mint<br>
-<input type="radio" name="sabor" value="VIBAR Fresh mint">VIBAR Fresh mint<br>
-<input type="radio" name="sabor" value="VIBAR Grape rasp gum">VIBAR Grape rasp gum<br>
-<input type="radio" name="sabor" value="VIBAR Mango ice cream">VIBAR Mango ice cream<br>
-<input type="radio" name="sabor" value="VIBAR Peach berry">VIBAR Peach berry<br>
-<input type="radio" name="sabor" value="VIBAR Pineapple ice cream">VIBAR Pineapple ice cream<br>
-<input type="radio" name="sabor" value="VIBAR Royal raspberry">VIBAR Royal raspberry<br>
-<input type="radio" name="sabor" value="VIBAR Sour orange raspberry">VIBAR Sour orange raspberry<br>
-<input type="radio" name="sabor" value="VIBAR Sweet Dragon bliss">VIBAR Sweet Dragon bliss<br>
-<input type="radio" name="sabor" value="VIBAR Watermelon">VIBAR Watermelon<br>
-
+                            <input type="radio" name="sabor" value="VIBAR Blackcurrant mint"
+                                onclick="addToCart('IPlay Vibar', 'VIBAR Blackcurrant mint')">VIBAR Blackcurrant
+                            mint<br>
+                            <input type="radio" name="sabor" value="VIBAR Fresh mint"
+                                onclick="addToCart('IPlay Vibar', 'VIBAR Fresh mint')">VIBAR Fresh mint<br>
+                            <input type="radio" name="sabor" value="VIBAR Grape rasp gum"
+                                onclick="addToCart('IPlay Vibar', 'VIBAR Grape rasp gum')">VIBAR Grape rasp gum<br>
+                            <input type="radio" name="sabor" value="VIBAR Mango ice cream"
+                                onclick="addToCart('IPlay Vibar', 'VIBAR Mango ice cream')">VIBAR Mango ice cream<br>
+                            <input type="radio" name="sabor" value="VIBAR Peach berry"
+                                onclick="addToCart('IPlay Vibar', 'VIBAR Peach berry')">VIBAR Peach berry<br>
+                            <input type="radio" name="sabor" value="VIBAR Pineapple ice cream"
+                                onclick="addToCart('IPlay Vibar', 'VIBAR Pineapple ice cream')">VIBAR Pineapple ice
+                            cream<br>
+                            <input type="radio" name="sabor" value="VIBAR Royal raspberry"
+                                onclick="addToCart('IPlay Vibar', 'VIBAR Royal raspberry')">VIBAR Royal raspberry<br>
+                            <input type="radio" name="sabor" value="VIBAR Sour orange raspberry"
+                                onclick="addToCart('IPlay Vibar', 'VIBAR Sour orange raspberry')">VIBAR Sour orange
+                            raspberry<br>
+                            <input type="radio" name="sabor" value="VIBAR Sweet Dragon bliss"
+                                onclick="addToCart('IPlay Vibar', 'VIBAR Sweet Dragon bliss')">VIBAR Sweet Dragon
+                            bliss<br>
+                            <input type="radio" name="sabor" value="VIBAR Watermelon"
+                                onclick="addToCart('IPlay Vibar', 'VIBAR Watermelon')">VIBAR Watermelon<br>
 
                         </ul>
                     </div>
@@ -392,26 +522,46 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Cool mint">Cool mint<br>
-<input type="radio" name="sabor" value="Coconut Ice">Coconut Ice<br>
-<input type="radio" name="sabor" value="Strawberry watermelon Ice">Strawberry watermelon Ice<br>
-<input type="radio" name="sabor" value="Kiwi strawberry">Kiwi strawberry<br>
-<input type="radio" name="sabor" value="Mamba">Mamba<br>
-<input type="radio" name="sabor" value="Peach Ice">Peach Ice<br>
-<input type="radio" name="sabor" value="Strawberry lychee">Strawberry lychee<br>
-<input type="radio" name="sabor" value="Mixed berries">Mixed berries<br>
-<input type="radio" name="sabor" value="Strawberry kiwi lychee">Strawberry kiwi lychee<br>
-<input type="radio" name="sabor" value="Grape Ice">Grape Ice<br>
-<input type="radio" name="sabor" value="Strawberry banana">Strawberry banana<br>
-<input type="radio" name="sabor" value="Banana Ice">Banana Ice<br>
-<input type="radio" name="sabor" value="Blueberry sour raspberry">Blueberry sour raspberry<br>
-<input type="radio" name="sabor" value="Strawberry coconut Ice">Strawberry coconut Ice<br>
-<input type="radio" name="sabor" value="Blueberry Ice">Blueberry Ice<br>
-<input type="radio" name="sabor" value="Lush Ice">Lush Ice<br>
-<input type="radio" name="sabor" value="Sour apple">Sour apple<br>
-<input type="radio" name="sabor" value="Lemon mint">Lemon mint<br>
-<input type="radio" name="sabor" value="Blue razz">Blue razz<br>
-
+                            <input type="radio" name="sabor" value="Cool mint"
+                                onclick="addToCart('Wonder G8', 'Cool mint')">Cool mint<br>
+                            <input type="radio" name="sabor" value="Coconut Ice"
+                                onclick="addToCart('Wonder G8', 'Coconut Ice')">Coconut Ice<br>
+                            <input type="radio" name="sabor" value="Strawberry watermelon Ice"
+                                onclick="addToCart('Wonder G8', 'Strawberry watermelon Ice')">Strawberry watermelon
+                            Ice<br>
+                            <input type="radio" name="sabor" value="Kiwi strawberry"
+                                onclick="addToCart('Wonder G8', 'Kiwi strawberry')">Kiwi strawberry<br>
+                            <input type="radio" name="sabor" value="Mamba"
+                                onclick="addToCart('Wonder G8', 'Mamba')">Mamba<br>
+                            <input type="radio" name="sabor" value="Peach Ice"
+                                onclick="addToCart('Wonder G8', 'Peach Ice')">Peach Ice<br>
+                            <input type="radio" name="sabor" value="Strawberry lychee"
+                                onclick="addToCart('Wonder G8', 'Strawberry lychee')">Strawberry lychee<br>
+                            <input type="radio" name="sabor" value="Mixed berries"
+                                onclick="addToCart('Wonder G8', 'Mixed berries')">Mixed berries<br>
+                            <input type="radio" name="sabor" value="Strawberry kiwi lychee"
+                                onclick="addToCart('Wonder G8', 'Strawberry kiwi lychee')">Strawberry kiwi lychee<br>
+                            <input type="radio" name="sabor" value="Grape Ice"
+                                onclick="addToCart('Wonder G8', 'Grape Ice')">Grape Ice<br>
+                            <input type="radio" name="sabor" value="Strawberry banana"
+                                onclick="addToCart('Wonder G8', 'Strawberry banana')">Strawberry banana<br>
+                            <input type="radio" name="sabor" value="Banana Ice"
+                                onclick="addToCart('Wonder G8', 'Banana Ice')">Banana Ice<br>
+                            <input type="radio" name="sabor" value="Blueberry sour raspberry"
+                                onclick="addToCart('Wonder G8', 'Blueberry sour raspberry')">Blueberry sour
+                            raspberry<br>
+                            <input type="radio" name="sabor" value="Strawberry coconut Ice"
+                                onclick="addToCart('Wonder G8', 'Strawberry coconut Ice')">Strawberry coconut Ice<br>
+                            <input type="radio" name="sabor" value="Blueberry Ice"
+                                onclick="addToCart('Wonder G8', 'Blueberry Ice')">Blueberry Ice<br>
+                            <input type="radio" name="sabor" value="Lush Ice"
+                                onclick="addToCart('Wonder G8', 'Lush Ice')">Lush Ice<br>
+                            <input type="radio" name="sabor" value="Sour apple"
+                                onclick="addToCart('Wonder G8', 'Sour apple')">Sour apple<br>
+                            <input type="radio" name="sabor" value="Lemon mint"
+                                onclick="addToCart('Wonder G8', 'Lemon mint')">Lemon mint<br>
+                            <input type="radio" name="sabor" value="Blue razz"
+                                onclick="addToCart('Wonder G8', 'Blue razz')">Blue razz<br>
 
                         </ul>
                     </div>
@@ -429,20 +579,32 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Strawberry kiwi">Strawberry kiwi<br>
-<input type="radio" name="sabor" value="Mango pineapple ice">Mango pineapple ice<br>
-<input type="radio" name="sabor" value="Melon ice">Melon ice<br>
-<input type="radio" name="sabor" value="Passion fruit">Passion fruit<br>
-<input type="radio" name="sabor" value="Strawberry banana">Strawberry banana<br>
-<input type="radio" name="sabor" value="Blue razz">Blue razz<br>
-<input type="radio" name="sabor" value="Lush ice">Lush ice<br>
-<input type="radio" name="sabor" value="Mint Ice">Mint Ice<br>
-<input type="radio" name="sabor" value="Strawberry watermelon">Strawberry watermelon<br>
-<input type="radio" name="sabor" value="Black ice">Black ice<br>
-<input type="radio" name="sabor" value="Blueberry melon ice">Blueberry melon ice<br>
-<input type="radio" name="sabor" value="Peach ice">Peach ice<br>
-<input type="radio" name="sabor" value="Amor (blue cherry)">Amor (blue cherry)<br>
-
+                            <input type="radio" name="sabor" value="Strawberry kiwi"
+                                onclick="addToCart('The Best Alfa', 'Strawberry kiwi')">Strawberry kiwi<br>
+                            <input type="radio" name="sabor" value="Mango pineapple ice"
+                                onclick="addToCart('The Best Alfa', 'Mango pineapple ice')">Mango pineapple ice<br>
+                            <input type="radio" name="sabor" value="Melon ice"
+                                onclick="addToCart('The Best Alfa', 'Melon ice')">Melon ice<br>
+                            <input type="radio" name="sabor" value="Passion fruit"
+                                onclick="addToCart('The Best Alfa', 'Passion fruit')">Passion fruit<br>
+                            <input type="radio" name="sabor" value="Strawberry banana"
+                                onclick="addToCart('The Best Alfa', 'Strawberry banana')">Strawberry banana<br>
+                            <input type="radio" name="sabor" value="Blue razz"
+                                onclick="addToCart('The Best Alfa', 'Blue razz')">Blue razz<br>
+                            <input type="radio" name="sabor" value="Lush ice"
+                                onclick="addToCart('The Best Alfa', 'Lush ice')">Lush ice<br>
+                            <input type="radio" name="sabor" value="Mint Ice"
+                                onclick="addToCart('The Best Alfa', 'Mint Ice')">Mint Ice<br>
+                            <input type="radio" name="sabor" value="Strawberry watermelon"
+                                onclick="addToCart('The Best Alfa', 'Strawberry watermelon')">Strawberry watermelon<br>
+                            <input type="radio" name="sabor" value="Black ice"
+                                onclick="addToCart('The Best Alfa', 'Black ice')">Black ice<br>
+                            <input type="radio" name="sabor" value="Blueberry melon ice"
+                                onclick="addToCart('The Best Alfa', 'Blueberry melon ice')">Blueberry melon ice<br>
+                            <input type="radio" name="sabor" value="Peach ice"
+                                onclick="addToCart('The Best Alfa', 'Peach ice')">Peach ice<br>
+                            <input type="radio" name="sabor" value="Amor (blue cherry)"
+                                onclick="addToCart('The Best Alfa', 'Amor (blue cherry)')">Amor (blue cherry)<br>
 
                         </ul>
                     </div>
@@ -466,16 +628,27 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Cool Mint">Cool Mint<br>
-<input type="radio" name="sabor" value="Kiwi Passion Fruit Guava">Kiwi Passion Fruit Guava<br>
-<input type="radio" name="sabor" value="Cotton Candy">Cotton Candy<br>
-<input type="radio" name="sabor" value="Kiwi Strawberry">Kiwi Strawberry<br>
-<input type="radio" name="sabor" value="Strawberry Watermelon">Strawberry Watermelon<br>
-<input type="radio" name="sabor" value="Mango Orange Watermelon">Mango Orange Watermelon<br>
-<input type="radio" name="sabor" value="Peach Ice">Peach Ice<br>
-<input type="radio" name="sabor" value="Coconut">Coconut<br>
-<input type="radio" name="sabor" value="Blueberry">Blueberry<br>
-<input type="radio" name="sabor" value="Strawberry Coconut">Strawberry Coconut<br>
+                            <input type="radio" name="sabor" value="Cool Mint"
+                                onclick="addToCart('Wonder G10', 'Cool Mint')">Cool Mint<br>
+                            <input type="radio" name="sabor" value="Kiwi Passion Fruit Guava"
+                                onclick="addToCart('Wonder G10', 'Kiwi Passion Fruit Guava')">Kiwi Passion Fruit
+                            Guava<br>
+                            <input type="radio" name="sabor" value="Cotton Candy"
+                                onclick="addToCart('Wonder G10', 'Cotton Candy')">Cotton Candy<br>
+                            <input type="radio" name="sabor" value="Kiwi Strawberry"
+                                onclick="addToCart('Wonder G10', 'Kiwi Strawberry')">Kiwi Strawberry<br>
+                            <input type="radio" name="sabor" value="Strawberry Watermelon"
+                                onclick="addToCart('Wonder G10', 'Strawberry Watermelon')">Strawberry Watermelon<br>
+                            <input type="radio" name="sabor" value="Mango Orange Watermelon"
+                                onclick="addToCart('Wonder G10', 'Mango Orange Watermelon')">Mango Orange Watermelon<br>
+                            <input type="radio" name="sabor" value="Peach Ice"
+                                onclick="addToCart('Wonder G10', 'Peach Ice')">Peach Ice<br>
+                            <input type="radio" name="sabor" value="Coconut"
+                                onclick="addToCart('Wonder G10', 'Coconut')">Coconut<br>
+                            <input type="radio" name="sabor" value="Blueberry"
+                                onclick="addToCart('Wonder G10', 'Blueberry')">Blueberry<br>
+                            <input type="radio" name="sabor" value="Strawberry Coconut"
+                                onclick="addToCart('Wonder G10', 'Strawberry Coconut')">Strawberry Coconut<br>
 
                         </ul>
                     </div>
@@ -494,16 +667,26 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Banana Ice">Banana Ice<br>
-<input type="radio" name="sabor" value="Black Ice">Black Ice<br>
-<input type="radio" name="sabor" value="Blue Mint Ice">Blue Mint Ice<br>
-<input type="radio" name="sabor" value="Blue Razz">Blue Razz<br>
-<input type="radio" name="sabor" value="Lush Ice">Lush Ice<br>
-<input type="radio" name="sabor" value="Mango Ice">Mango Ice<br>
-<input type="radio" name="sabor" value="Miami Mint">Miami Mint<br>
-<input type="radio" name="sabor" value="Mint Ice">Mint Ice<br>
-<input type="radio" name="sabor" value="Peach Ice">Peach Ice<br>
-<input type="radio" name="sabor" value="Pineapple Mango Ice">Pineapple Mango Ice<br>
+                            <input type="radio" name="sabor" value="Banana Ice"
+                                onclick="addToCart('Mayweather Vape', 'Banana Ice')">Banana Ice<br>
+                            <input type="radio" name="sabor" value="Black Ice"
+                                onclick="addToCart('Mayweather Vape', 'Black Ice')">Black Ice<br>
+                            <input type="radio" name="sabor" value="Blue Mint Ice"
+                                onclick="addToCart('Mayweather Vape', 'Blue Mint Ice')">Blue Mint Ice<br>
+                            <input type="radio" name="sabor" value="Blue Razz"
+                                onclick="addToCart('Mayweather Vape', 'Blue Razz')">Blue Razz<br>
+                            <input type="radio" name="sabor" value="Lush Ice"
+                                onclick="addToCart('Mayweather Vape', 'Lush Ice')">Lush Ice<br>
+                            <input type="radio" name="sabor" value="Mango Ice"
+                                onclick="addToCart('Mayweather Vape', 'Mango Ice')">Mango Ice<br>
+                            <input type="radio" name="sabor" value="Miami Mint"
+                                onclick="addToCart('Mayweather Vape', 'Miami Mint')">Miami Mint<br>
+                            <input type="radio" name="sabor" value="Mint Ice"
+                                onclick="addToCart('Mayweather Vape', 'Mint Ice')">Mint Ice<br>
+                            <input type="radio" name="sabor" value="Peach Ice"
+                                onclick="addToCart('Mayweather Vape', 'Peach Ice')">Peach Ice<br>
+                            <input type="radio" name="sabor" value="Pineapple Mango Ice"
+                                onclick="addToCart('Mayweather Vape', 'Pineapple Mango Ice')">Pineapple Mango Ice<br>
 
                         </ul>
                     </div>
@@ -521,26 +704,46 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Apple Mango Pear">Apple Mango Pear<br>
-<input type="radio" name="sabor" value="Apple Peach">Apple Peach<br>
-<input type="radio" name="sabor" value="Blue Razz">Blue Razz<br>
-<input type="radio" name="sabor" value="Cool Mint">Cool Mint<br>
-<input type="radio" name="sabor" value="Frozen Banana">Frozen Banana<br>
-<input type="radio" name="sabor" value="Frozen Blueberry">Frozen Blueberry<br>
-<input type="radio" name="sabor" value="Frozen Grape">Frozen Grape<br>
-<input type="radio" name="sabor" value="Frozen Mango">Frozen Mango<br>
-<input type="radio" name="sabor" value="Frozen Peach">Frozen Peach<br>
-<input type="radio" name="sabor" value="Fuji Apple">Fuji Apple<br>
-<input type="radio" name="sabor" value="Grape Razz">Grape Razz<br>
-<input type="radio" name="sabor" value="Lush Lime">Lush Lime<br>
-<input type="radio" name="sabor" value="Melon Berry">Melon Berry<br>
-<input type="radio" name="sabor" value="Melon Head">Melon Head<br>
-<input type="radio" name="sabor" value="Peach Watermelon">Peach Watermelon<br>
-<input type="radio" name="sabor" value="Watermelon">Watermelon<br>
-<input type="radio" name="sabor" value="Watermelon Bubblegum">Watermelon Bubblegum<br>
-<input type="radio" name="sabor" value="Watermelon Gummies">Watermelon Gummies<br>
-<input type="radio" name="sabor" value="White Gummy Bear">White Gummy Bear<br>
-<input type="radio" name="sabor" value="Toro Rosso">Toro Rosso<br>
+                            <input type="radio" name="sabor" value="Apple Mango Pear"
+                                onclick="addToCart('Waka Sopro', 'Apple Mango Pear')">Apple Mango Pear<br>
+                            <input type="radio" name="sabor" value="Apple Peach"
+                                onclick="addToCart('Waka Sopro', 'Apple Peach')">Apple Peach<br>
+                            <input type="radio" name="sabor" value="Blue Razz"
+                                onclick="addToCart('Waka Sopro', 'Blue Razz')">Blue Razz<br>
+                            <input type="radio" name="sabor" value="Cool Mint"
+                                onclick="addToCart('Waka Sopro', 'Cool Mint')">Cool Mint<br>
+                            <input type="radio" name="sabor" value="Frozen Banana"
+                                onclick="addToCart('Waka Sopro', 'Frozen Banana')">Frozen Banana<br>
+                            <input type="radio" name="sabor" value="Frozen Blueberry"
+                                onclick="addToCart('Waka Sopro', 'Frozen Blueberry')">Frozen Blueberry<br>
+                            <input type="radio" name="sabor" value="Frozen Grape"
+                                onclick="addToCart('Waka Sopro', 'Frozen Grape')">Frozen Grape<br>
+                            <input type="radio" name="sabor" value="Frozen Mango"
+                                onclick="addToCart('Waka Sopro', 'Frozen Mango')">Frozen Mango<br>
+                            <input type="radio" name="sabor" value="Frozen Peach"
+                                onclick="addToCart('Waka Sopro', 'Frozen Peach')">Frozen Peach<br>
+                            <input type="radio" name="sabor" value="Fuji Apple"
+                                onclick="addToCart('Waka Sopro', 'Fuji Apple')">Fuji Apple<br>
+                            <input type="radio" name="sabor" value="Grape Razz"
+                                onclick="addToCart('Waka Sopro', 'Grape Razz')">Grape Razz<br>
+                            <input type="radio" name="sabor" value="Lush Lime"
+                                onclick="addToCart('Waka Sopro', 'Lush Lime')">Lush Lime<br>
+                            <input type="radio" name="sabor" value="Melon Berry"
+                                onclick="addToCart('Waka Sopro', 'Melon Berry')">Melon Berry<br>
+                            <input type="radio" name="sabor" value="Melon Head"
+                                onclick="addToCart('Waka Sopro', 'Melon Head')">Melon Head<br>
+                            <input type="radio" name="sabor" value="Peach Watermelon"
+                                onclick="addToCart('Waka Sopro', 'Peach Watermelon')">Peach Watermelon<br>
+                            <input type="radio" name="sabor" value="Watermelon"
+                                onclick="addToCart('Waka Sopro', 'Watermelon')">Watermelon<br>
+                            <input type="radio" name="sabor" value="Watermelon Bubblegum"
+                                onclick="addToCart('Waka Sopro', 'Watermelon Bubblegum')">Watermelon Bubblegum<br>
+                            <input type="radio" name="sabor" value="Watermelon Gummies"
+                                onclick="addToCart('Waka Sopro', 'Watermelon Gummies')">Watermelon Gummies<br>
+                            <input type="radio" name="sabor" value="White Gummy Bear"
+                                onclick="addToCart('Waka Sopro', 'White Gummy Bear')">White Gummy Bear<br>
+                            <input type="radio" name="sabor" value="Toro Rosso"
+                                onclick="addToCart('Waka Sopro', 'Toro Rosso')">Toro Rosso<br>
 
                         </ul>
                     </div>
@@ -558,19 +761,30 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Blue Razz Ice">Blue Razz Ice<br>
-<input type="radio" name="sabor" value="Blueberry Watermelon">Blueberry Watermelon<br>
-<input type="radio" name="sabor" value="Cherry Lemon">Cherry Lemon<br>
-<input type="radio" name="sabor" value="Citrus Grape">Citrus Grape<br>
-<input type="radio" name="sabor" value="Coconut Banana">Coconut Banana<br>
-<input type="radio" name="sabor" value="Dragon Strawnana">Dragon Strawnana<br>
-<input type="radio" name="sabor" value="Georgia Peach">Georgia Peach<br>
-<input type="radio" name="sabor" value="La Mint">La Mint<br>
-<input type="radio" name="sabor" value="Mount Splash">Mount Splash<br>
-<input type="radio" name="sabor" value="OMG">OMG<br>
-<input type="radio" name="sabor" value="Ruby Raspberry">Ruby Raspberry<br>
-<input type="radio" name="sabor" value="Watermelon BG">Watermelon BG
-
+                            <input type="radio" name="sabor" value="Blue Razz Ice"
+                                onclick="addToCart('Elfbar Touch 10K', 'Blue Razz Ice')">Blue Razz Ice<br>
+                            <input type="radio" name="sabor" value="Blueberry Watermelon"
+                                onclick="addToCart('Elfbar Touch 10K', 'Blueberry Watermelon')">Blueberry Watermelon<br>
+                            <input type="radio" name="sabor" value="Cherry Lemon"
+                                onclick="addToCart('Elfbar Touch 10K', 'Cherry Lemon')">Cherry Lemon<br>
+                            <input type="radio" name="sabor" value="Citrus Grape"
+                                onclick="addToCart('Elfbar Touch 10K', 'Citrus Grape')">Citrus Grape<br>
+                            <input type="radio" name="sabor" value="Coconut Banana"
+                                onclick="addToCart('Elfbar Touch 10K', 'Coconut Banana')">Coconut Banana<br>
+                            <input type="radio" name="sabor" value="Dragon Strawnana"
+                                onclick="addToCart('Elfbar Touch 10K', 'Dragon Strawnana')">Dragon Strawnana<br>
+                            <input type="radio" name="sabor" value="Georgia Peach"
+                                onclick="addToCart('Elfbar Touch 10K', 'Georgia Peach')">Georgia Peach<br>
+                            <input type="radio" name="sabor" value="La Mint"
+                                onclick="addToCart('Elfbar Touch 10K', 'La Mint')">La Mint<br>
+                            <input type="radio" name="sabor" value="Mount Splash"
+                                onclick="addToCart('Elfbar Touch 10K', 'Mount Splash')">Mount Splash<br>
+                            <input type="radio" name="sabor" value="OMG"
+                                onclick="addToCart('Elfbar Touch 10K', 'OMG')">OMG<br>
+                            <input type="radio" name="sabor" value="Ruby Raspberry"
+                                onclick="addToCart('Elfbar Touch 10K', 'Ruby Raspberry')">Ruby Raspberry<br>
+                            <input type="radio" name="sabor" value="Watermelon BG"
+                                onclick="addToCart('Elfbar Touch 10K', 'Watermelon BG')">Watermelon BG<br>
                         </ul>
                     </div>
                 </div>
@@ -588,27 +802,46 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Apple Mango Pear">Apple Mango Pear<br>
-<input type="radio" name="sabor" value="Apple Peach">Apple Peach<br>
-<input type="radio" name="sabor" value="Blue Razz">Blue Razz<br>
-<input type="radio" name="sabor" value="Cool Mint">Cool Mint<br>
-<input type="radio" name="sabor" value="Frozen Banana">Frozen Banana<br>
-<input type="radio" name="sabor" value="Frozen Blueberry">Frozen Blueberry<br>
-<input type="radio" name="sabor" value="Frozen Grape">Frozen Grape<br>
-<input type="radio" name="sabor" value="Frozen Mango">Frozen Mango<br>
-<input type="radio" name="sabor" value="Frozen Peach">Frozen Peach<br>
-<input type="radio" name="sabor" value="Fuji Apple">Fuji Apple<br>
-<input type="radio" name="sabor" value="Grape Razz">Grape Razz<br>
-<input type="radio" name="sabor" value="Lush Lime">Lush Lime<br>
-<input type="radio" name="sabor" value="Melon Berry">Melon Berry<br>
-<input type="radio" name="sabor" value="Melon Head">Melon Head<br>
-<input type="radio" name="sabor" value="Peach Watermelon">Peach Watermelon<br>
-<input type="radio" name="sabor" value="Watermelon">Watermelon<br>
-<input type="radio" name="sabor" value="Watermelon Bubblegum">Watermelon Bubblegum<br>
-<input type="radio" name="sabor" value="Watermelon Gummies">Watermelon Gummies<br>
-<input type="radio" name="sabor" value="White Gummy Bear">White Gummy Bear<br>
-<input type="radio" name="sabor" value="Toro Rosso">Toro Rosso<br>
-
+                            <input type="radio" name="sabor" value="Apple Mango Pear"
+                                onclick="addToCart('Waka Sopro', 'Apple Mango Pear')">Apple Mango Pear<br>
+                            <input type="radio" name="sabor" value="Apple Peach"
+                                onclick="addToCart('Waka Sopro', 'Apple Peach')">Apple Peach<br>
+                            <input type="radio" name="sabor" value="Blue Razz"
+                                onclick="addToCart('Waka Sopro', 'Blue Razz')">Blue Razz<br>
+                            <input type="radio" name="sabor" value="Cool Mint"
+                                onclick="addToCart('Waka Sopro', 'Cool Mint')">Cool Mint<br>
+                            <input type="radio" name="sabor" value="Frozen Banana"
+                                onclick="addToCart('Waka Sopro', 'Frozen Banana')">Frozen Banana<br>
+                            <input type="radio" name="sabor" value="Frozen Blueberry"
+                                onclick="addToCart('Waka Sopro', 'Frozen Blueberry')">Frozen Blueberry<br>
+                            <input type="radio" name="sabor" value="Frozen Grape"
+                                onclick="addToCart('Waka Sopro', 'Frozen Grape')">Frozen Grape<br>
+                            <input type="radio" name="sabor" value="Frozen Mango"
+                                onclick="addToCart('Waka Sopro', 'Frozen Mango')">Frozen Mango<br>
+                            <input type="radio" name="sabor" value="Frozen Peach"
+                                onclick="addToCart('Waka Sopro', 'Frozen Peach')">Frozen Peach<br>
+                            <input type="radio" name="sabor" value="Fuji Apple"
+                                onclick="addToCart('Waka Sopro', 'Fuji Apple')">Fuji Apple<br>
+                            <input type="radio" name="sabor" value="Grape Razz"
+                                onclick="addToCart('Waka Sopro', 'Grape Razz')">Grape Razz<br>
+                            <input type="radio" name="sabor" value="Lush Lime"
+                                onclick="addToCart('Waka Sopro', 'Lush Lime')">Lush Lime<br>
+                            <input type="radio" name="sabor" value="Melon Berry"
+                                onclick="addToCart('Waka Sopro', 'Melon Berry')">Melon Berry<br>
+                            <input type="radio" name="sabor" value="Melon Head"
+                                onclick="addToCart('Waka Sopro', 'Melon Head')">Melon Head<br>
+                            <input type="radio" name="sabor" value="Peach Watermelon"
+                                onclick="addToCart('Waka Sopro', 'Peach Watermelon')">Peach Watermelon<br>
+                            <input type="radio" name="sabor" value="Watermelon"
+                                onclick="addToCart('Waka Sopro', 'Watermelon')">Watermelon<br>
+                            <input type="radio" name="sabor" value="Watermelon Bubblegum"
+                                onclick="addToCart('Waka Sopro', 'Watermelon Bubblegum')">Watermelon Bubblegum<br>
+                            <input type="radio" name="sabor" value="Watermelon Gummies"
+                                onclick="addToCart('Waka Sopro', 'Watermelon Gummies')">Watermelon Gummies<br>
+                            <input type="radio" name="sabor" value="White Gummy Bear"
+                                onclick="addToCart('Waka Sopro', 'White Gummy Bear')">White Gummy Bear<br>
+                            <input type="radio" name="sabor" value="Toro Rosso"
+                                onclick="addToCart('Waka Sopro', 'Toro Rosso')">Toro Rosso<br>
                         </ul>
                     </div>
                 </div>
@@ -625,21 +858,41 @@
                     <div class="overlay-content">
                         <h1>Sabores</h1>
                         <ul>
-                            <input type="radio" name="sabor" value="Mexico Mango 5%">Mexico Mango 5%<br>
-<input type="radio" name="sabor" value="Cool Mint 5%">Cool Mint 5%<br>
-<input type="radio" name="sabor" value="Coconut ice 5%">Coconut ice 5%<br>
-<input type="radio" name="sabor" value="Strawberry Watermelon 5%">Strawberry Watermelon 5%<br>
-<input type="radio" name="sabor" value="Lemon Mint 5%">Lemon Mint 5%<br>
-<input type="radio" name="sabor" value="Blue Raz Ice 5%">Blue Raz Ice 5%<br>
-<input type="radio" name="sabor" value="Sour Apple Ice 5%">Sour Apple Ice 5%<br>
-<input type="radio" name="sabor" value="Watermelon Ice 5%">Watermelon Ice 5%<br>
-<input type="radio" name="sabor" value="Blue Dragon Fruit Peach 5%">Blue Dragon Fruit Peach 5%<br>
-<input type="radio" name="sabor" value="Fucking Fab 5%">Fucking Fab 5%<br>
-<input type="radio" name="sabor" value="California Cherry 5%">California Cherry 5%<br>
-<input type="radio" name="sabor" value="Pinnaple Lemon Watermelon 5%">Pinnaple Lemon Watermelon 5%<br>
-<input type="radio" name="sabor" value="Juicy Peach Ice 5%">Juicy Peach Ice 5%<br>
-<input type="radio" name="sabor" value="Blueberry Watermelon 5%">Blueberry Watermelon 5%<br>
-<input type="radio" name="sabor" value="Strawberry Cherry Lemon 5%">Strawberry Cherry Lemon 5%
+                            <input type="radio" name="sabor" value="Mexico Mango 5%"
+                                onclick="addToCart('Wonder Race', 'Mexico Mango 5%')">Mexico Mango 5%<br>
+                            <input type="radio" name="sabor" value="Cool Mint 5%"
+                                onclick="addToCart('Wonder Race', 'Cool Mint 5%')">Cool Mint 5%<br>
+                            <input type="radio" name="sabor" value="Coconut ice 5%"
+                                onclick="addToCart('Wonder Race', 'Coconut ice 5%')">Coconut ice 5%<br>
+                            <input type="radio" name="sabor" value="Strawberry Watermelon 5%"
+                                onclick="addToCart('Wonder Race', 'Strawberry Watermelon 5%')">Strawberry Watermelon
+                            5%<br>
+                            <input type="radio" name="sabor" value="Lemon Mint 5%"
+                                onclick="addToCart('Wonder Race', 'Lemon Mint 5%')">Lemon Mint 5%<br>
+                            <input type="radio" name="sabor" value="Blue Raz Ice 5%"
+                                onclick="addToCart('Wonder Race', 'Blue Raz Ice 5%')">Blue Raz Ice 5%<br>
+                            <input type="radio" name="sabor" value="Sour Apple Ice 5%"
+                                onclick="addToCart('Wonder Race', 'Sour Apple Ice 5%')">Sour Apple Ice 5%<br>
+                            <input type="radio" name="sabor" value="Watermelon Ice 5%"
+                                onclick="addToCart('Wonder Race', 'Watermelon Ice 5%')">Watermelon Ice 5%<br>
+                            <input type="radio" name="sabor" value="Blue Dragon Fruit Peach 5%"
+                                onclick="addToCart('Wonder Race', 'Blue Dragon Fruit Peach 5%')">Blue Dragon Fruit Peach
+                            5%<br>
+                            <input type="radio" name="sabor" value="Fucking Fab 5%"
+                                onclick="addToCart('Wonder Race', 'Fucking Fab 5%')">Fucking Fab 5%<br>
+                            <input type="radio" name="sabor" value="California Cherry 5%"
+                                onclick="addToCart('Wonder Race', 'California Cherry 5%')">California Cherry 5%<br>
+                            <input type="radio" name="sabor" value="Pinnaple Lemon Watermelon 5%"
+                                onclick="addToCart('Wonder Race', 'Pinnaple Lemon Watermelon 5%')">Pinnaple Lemon
+                            Watermelon 5%<br>
+                            <input type="radio" name="sabor" value="Juicy Peach Ice 5%"
+                                onclick="addToCart('Wonder Race', 'Juicy Peach Ice 5%')">Juicy Peach Ice 5%<br>
+                            <input type="radio" name="sabor" value="Blueberry Watermelon 5%"
+                                onclick="addToCart('Wonder Race', 'Blueberry Watermelon 5%')">Blueberry Watermelon
+                            5%<br>
+                            <input type="radio" name="sabor" value="Strawberry Cherry Lemon 5%"
+                                onclick="addToCart('Wonder Race', 'Strawberry Cherry Lemon 5%')">Strawberry Cherry Lemon
+                            5%<br>
 
                         </ul>
                     </div>

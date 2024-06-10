@@ -440,10 +440,10 @@
             z-index: 999;
         }
         
-         .overlay-content {
+        .overlay-content {
             background-color: #121212;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 30px;
             color: white;
             font-family: cursive;
         }

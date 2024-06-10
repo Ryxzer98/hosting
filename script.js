@@ -98,3 +98,6 @@ function showOptions(overlayId) {
             var subject = 'Nuevo pedido';
             window.location.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(emailBody);
         }
+        function closeAnnouncement() {
+            document.getElementById('announcement-bar').style.display = 'none';
+        }

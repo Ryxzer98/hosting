@@ -74,6 +74,7 @@ function showOptions(overlayId) {
             } else {
                 cartDiv.classList.add('hidden');
             }
+            window.location.href='#cart';
         }
     
         function getCartContent() {
@@ -97,4 +98,3 @@ function showOptions(overlayId) {
             var subject = 'Nuevo pedido';
             window.location.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(emailBody);
         }
-    
